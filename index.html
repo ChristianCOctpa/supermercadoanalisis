@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Supermercado Aserrí</title>
+  <link rel="stylesheet" href="/CSS/styles.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🛒 Supermercado Aserrí</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="seccion">
+    <h2>Bienvenidos a Supermercado Aserrí</h2>
+    <p>Tu tienda de confianza con los mejores precios y la mejor atención en Aserrí.</p>
+
+    <button id="verOfertasBtn" aria-controls="lista-ofertas">Ver Ofertas</button>
+  </section>
+
+  <section id="productos" class="seccion">
+    <h2>Productos Destacados</h2>
+    <div class="productos">
+      <div class="card">
+        <img src="/img/OIP.webp" alt="Arroz" />
+        <h3>Arroz Tío Pelón</h3>
+        <p>₡1,200 / kg</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Tomates" />
+        <h3>Manzanas Frescas</h3>
+        <p>₡900 / kg</p>
+      </div>
+      <div class="card">
+        <img src="/img/OIP (1).webp" alt="Leche" />
+        <h3>Leche Dos Pinos</h3>
+        <p>₡850 / litro</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="ofertas" class="seccion">
+    <h2>Ofertas Especiales</h2>
+    <div id="lista-ofertas" aria-live="polite">
+      <p>Haz clic en “Ver Ofertas” en la parte superior para ver nuestras promociones actuales.</p>
+    </div>
+  </section>
+
+  <section id="nosotros" class="seccion">
+    <h2>Sobre Nosotros</h2>
+    <p>
+     En Supermercado Aserrí nos enorgullece servir a nuestra comunidad desde 1998, ofreciendo 
+     productos de alta calidad y atención cercana que nos ha convertido en la tienda de confianza 
+     de muchas familias. Nos esforzamos por apoyar a productores locales, promoviendo la economía 
+     regional y asegurando que nuestros clientes reciban siempre productos frescos y auténticos. 
+     Además, garantizamos precios justos, combinando calidad y accesibilidad, para que cada compra 
+     sea satisfactoria. Nuestro compromiso es brindar una experiencia de compra cómoda, segura y 
+     amigable, donde cada cliente se sienta valorado y bienvenido.
+    </p>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+    <form id="form-contacto">
+      <label>Nombre:</label>
+      <input type="text" id="nombre" required />
+      <label>Correo electrónico:</label>
+      <input type="email" id="email" required />
+      <label>Mensaje:</label>
+      <textarea id="mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p id="mensaje-confirmacion" role="status"></p>
+  </section>
+
+  <section id="ubicacion" class="seccion">
+  <h2>Ubicación</h2>
+  <p>Encuéntranos en Aserrí, Costa Rica:</p>
+  <div class="mapa">
+    <iframe 
+     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7861.733675841674!2d-84.09230262640229!3d9.861537541303543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2scr!4v1760976028110!5m2!1ses-419!2scr"
+      width="100%" 
+      height="400" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 Supermercado Aserrí | Desarrollado por estudiantes de Desarrollo Web</p>
+  </footer>
+
+  <script src="/JS/script.js"></script>
+</body>
+</html>
